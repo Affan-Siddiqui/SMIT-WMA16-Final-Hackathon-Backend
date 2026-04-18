@@ -12,7 +12,7 @@ app.get('/api', (req, res) => {
 })
 
 
-app.get('/api/test-db', async (req, res) => {
+app.get('/test-db', async (req, res) => {
     try {
         await connectDb();
         res.send("DB is working");
