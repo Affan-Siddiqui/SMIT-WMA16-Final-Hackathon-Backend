@@ -1,23 +1,15 @@
 
-const express = require('express');
-const app = express();
+// const express = require('express');
+// const app = express();
 
-const Data = require('../data/data');
-const connectDb = require('../config/db');
+// const Data = require('../data/data');
+// const connectDb = require('../config/db');
 
-app.use(express.json());
+// app.use(express.json());
 
-app.get('/api', async (req, res) => {
-    res.send("this is main");
-
-    try {
-        await connectDb();
-        res.send("DB is working");
-    } catch (err) {
-        res.status(500).send("DB failed");
-    }
-    
-})
+// app.get('/api', async (req, res) => {
+//     res.send("this is main");    
+// })
 
 
 // app.get('/test-db', async (req, res) => {
@@ -39,17 +31,21 @@ app.get('/api', async (req, res) => {
 // })
 
 // connect DB safely (Vercel-friendly)
-const start = async () => {
-    try {
-        await connectDb();
-        console.log("DB connected");
-    } catch (err) {
-        console.log("DB error:", err);
-    }
-};
+// const start = async () => {
+//     try {
+//         await connectDb();
+//         console.log("DB connected");
+//     } catch (err) {
+//         console.log("DB error:", err);
+//     }
+// };
 
-start();
+// start();
 
 // app.use('/api/data', Data);
 
-module.exports = app;
+// module.exports = app;
+
+module.exports = (req, res) => {
+    res.status(200).send("WORKING");
+};
