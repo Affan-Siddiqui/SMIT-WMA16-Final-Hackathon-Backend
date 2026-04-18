@@ -7,19 +7,19 @@ const connectDb = require('../config/db');
 
 app.use(express.json());
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send("this is main");
 })
 
 
-app.get('/test-db', async (req, res) => {
-    try {
-        await connectDb();
-        res.send("DB is working");
-    } catch (err) {
-        res.status(500).send("DB failed");
-    }
-});
+// app.get('/test-db', async (req, res) => {
+//     try {
+//         await connectDb();
+//         res.send("DB is working");
+//     } catch (err) {
+//         res.status(500).send("DB failed");
+//     }
+// });
 
 // connectDb().then(() => { 
 //     // app.listen(5000, () => {
