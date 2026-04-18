@@ -20,7 +20,7 @@ app.get('/api', (req, res) => {
 //     console.log(err);
 // })
 
-connect DB safely (Vercel-friendly)
+// connect DB safely (Vercel-friendly)
 const start = async () => {
     try {
         await connectDb();
