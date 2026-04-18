@@ -6,8 +6,8 @@ const mangoose = require('mongoose');
 const connectDB = () => { 
     
     return new Promise((resolve, reject) => {
-        mangoose.connect('mongodb+srv://maffans913_db_user:db_User_913>@cluster.hnrhoh5.mongodb.net/?appName=Cluster')
-            // 'mongodb+srv://maffans913_db_user:db_User_913>@cluster.hnrhoh5.mongodb.net/?appName=Cluster'
+        mangoose.connect(`mongodb+srv://affan:compasspassword913@cluster.hnrhoh5.mongodb.net/?appName=Cluster`)
+            // 'mongodb+srv://maffans913_db_user:db_User_913@cluster.hnrhoh5.mongodb.net/?appName=Cluster'
         .then(() => {
             console.log('db connected');
             resolve();
@@ -17,4 +17,4 @@ const connectDB = () => {
     })
 }
 
-module.exports = connectDB;
+module.exports = connectDB; 
