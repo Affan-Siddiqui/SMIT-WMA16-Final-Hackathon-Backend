@@ -33,3 +33,5 @@ app.get('/', (req, res) => {
 // start();
 
 // app.use('/data', Data);
+
+module.exports = app;
