@@ -14,14 +14,14 @@ app.get('/', async (req, res) => {
 })
 
 
-app.get('/test-db', async (req, res) => {
-    try {
-        await connectDb();
-        res.send("DB is working");
-    } catch (err) {
-        res.status(500).send("DB failed");
-    }
-});
+// app.get('/test-db', async (req, res) => {
+//     try {
+//         await connectDb();
+//         res.send("DB is working");
+//     } catch (err) {
+//         res.status(500).send("DB failed");
+//     }
+// });
 
 // connectDb().then(() => { 
 //     // app.listen(5000, () => {
