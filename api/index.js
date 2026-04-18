@@ -16,6 +16,7 @@ connectDb().then(() => {
         console.log("Server has started at : http://localhost:5000");  
     // })
 }).catch((err) => {
+    console.log('error');
     console.log(err);
 })
 
