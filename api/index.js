@@ -9,6 +9,14 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send("this is main");
+
+    try {
+        await connectDb();
+        res.send("DB is working");
+    } catch (err) {
+        res.status(500).send("DB failed");
+    }
+    
 })
 
 
