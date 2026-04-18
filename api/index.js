@@ -33,16 +33,16 @@ app.get('/', async (req, res) => {
 // })
 
 // connect DB safely (Vercel-friendly)
-const start = async () => {
-    try {
-        await connectDb();
-        console.log("DB connected");
-    } catch (err) {
-        console.log("DB error:", err);
-    }
-};
+// const start = async () => {
+//     try {
+//         await connectDb();
+//         console.log("DB connected");
+//     } catch (err) {
+//         console.log("DB error:", err);
+//     }
+// };
 
-start();
+// start();
 
 // app.use('/api/data', Data);
 
