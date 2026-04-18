@@ -2,8 +2,8 @@
 const express = require('express');
 const app = express();
 
-const Data = require('../data/data');
-const connectDb = require('../config/db');
+// const Data = require('../data/data');
+// const connectDb = require('../config/db');
 
 app.use(express.json());
 
@@ -32,4 +32,4 @@ app.get('/', (req, res) => {
 
 // start();
 
-app.use('/data', Data);
+// app.use('/data', Data);
