@@ -11,12 +11,12 @@ app.get('/', (req, res) => {
     res.send("this is main");
 })
 
-connectDb().then(() => { 
-    // app.listen(5000, () => {
-        console.log("Server has started at : http://localhost:5000");  
-    // })
-}).catch((err) => {
-    console.log(err);
-})
+// connectDb().then(() => { 
+//     // app.listen(5000, () => {
+//         console.log("Server has started at : http://localhost:5000");  
+//     // })
+// }).catch((err) => {
+//     console.log(err);
+// })
 
 app.use('/data', Data);
