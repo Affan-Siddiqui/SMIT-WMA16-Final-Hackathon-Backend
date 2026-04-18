@@ -7,8 +7,8 @@ const connectDb = require('../config/db');
 
 app.use(express.json());
 
-app.get('/api', (req, res) => {
-    // res.send("this is main");
+app.get('/api', async (req, res) => {
+    res.send("this is main");
 
     try {
         await connectDb();
