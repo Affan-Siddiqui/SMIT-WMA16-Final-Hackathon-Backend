@@ -5,7 +5,7 @@ const serverless = require('serverless-http');
 const app = express();
 
 // const Data = require('../data/data');
-// const connectDb = require('../config/db');
+const connectDb = require('../config/db');
 
 // app.use(express.json());
 
