@@ -32,6 +32,6 @@ connectDb().then(() => {
 
 // start();
 
-// app.use('/data', Data);
+app.use('/data', Data);
 
 module.exports = app;
